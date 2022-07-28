@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C46D69CE-E5C1-4625-BF03-7B64C9DF3E57}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DUET_Hall_Dining_Management_System</RootNamespace>
+    <AssemblyName>DUET Hall Dining Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassDatabase.cs" />
+    <Compile Include="ClassDataRetrive.cs" />
+    <Compile Include="ClassDataStoreManagment.cs" />
+    <Compile Include="FormCodeVarify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCodeVarify.Designer.cs">
+      <DependentUpon>FormCodeVarify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminHome.Designer.cs">
+      <DependentUpon>FormAdminHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModifyMillDitals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModifyMillDitals.Designer.cs">
+      <DependentUpon>FormModifyMillDitals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMoneyModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMoneyModify.Designer.cs">
+      <DependentUpon>FormMoneyModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResetPassword.Designer.cs">
+      <DependentUpon>FormResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormShowMillDitals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormShowMillDitals.Designer.cs">
+      <DependentUpon>FormShowMillDitals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormShowMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormShowMoney.Designer.cs">
+      <DependentUpon>FormShowMoney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateMill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateMill.Designer.cs">
+      <DependentUpon>FormUpdateMill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateMoney.Designer.cs">
+      <DependentUpon>FormUpdateMoney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementSystem.Designer.cs">
+      <DependentUpon>ManagementSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminSingUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminSingUP.Designer.cs">
+      <DependentUpon>FormAdminSingUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSignUp.Designer.cs">
+      <DependentUpon>FormSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStudentSignup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStudentSignup.Designer.cs">
+      <DependentUpon>FormStudentSignup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FormEmailVarify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmailVarify.Designer.cs">
+      <DependentUpon>FormEmailVarify.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormCodeVarify.resx">
+      <DependentUpon>FormCodeVarify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminHome.resx">
+      <DependentUpon>FormAdminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModifyMillDitals.resx">
+      <DependentUpon>FormModifyMillDitals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMoneyModify.resx">
+      <DependentUpon>FormMoneyModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResetPassword.resx">
+      <DependentUpon>FormResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormShowMillDitals.resx">
+      <DependentUpon>FormShowMillDitals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormShowMoney.resx">
+      <DependentUpon>FormShowMoney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateMill.resx">
+      <DependentUpon>FormUpdateMill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateMoney.resx">
+      <DependentUpon>FormUpdateMoney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementSystem.resx">
+      <DependentUpon>ManagementSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminSingUP.resx">
+      <DependentUpon>FormAdminSingUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSignUp.resx">
+      <DependentUpon>FormSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStudentSignup.resx">
+      <DependentUpon>FormStudentSignup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="FormEmailVarify.resx">
+      <DependentUpon>FormEmailVarify.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\139415029_1032607827216222_3486760368709009068_n %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
